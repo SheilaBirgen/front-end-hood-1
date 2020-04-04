@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color:greenyellow;
+  background-color: blue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -68,22 +68,24 @@ span.psw {
 </head>
 <body>
 
-<h2>Community  Form</h2>
+<h2>Create Business Form</h2>
 
-<form action="/frontend/users/create_business.html">
+<form action="/frontend/users/update_profile.html">
  
     <div class="container">
-      
+      <label for="uname"><b>Community Name</b></label>
+      <input type="text" placeholder="Enter hood name" name="uname" required>
   
-      <label for="text"><b>Community Name</b></label>
-      <input type="text" placeholder="Enter Name" name="text" required>
+      <label for="psw"><b>Business Name</b></label>
+      <input type="text" placeholder="Enter Business Name" name="psw" required>
           
-      <button type="submit">Add Community</button>
+      <button type="submit">Create Business</button>
       
     </div>
   
     
   </form>
+
 </body>
 </html>
 
